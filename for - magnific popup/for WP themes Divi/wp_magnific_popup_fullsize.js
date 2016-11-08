@@ -47,7 +47,7 @@ jQuery.extend(true, jQuery.magnificPopup.defaults, {
 				jQuery('.mfp_go_full_img').fadeIn(300);
 			}
 			
-		  if(window.imgIsClick == 0){
+		  if(window.imgIsClick === 0){
 			jQuery(this).stop("true", "true").animate({'max-height' : img_h+'px'}, 800);
 			jQuery('.mfp_go_full_img').html(window.txtCloseBtn);
 			window.imgIsClick = 1;
